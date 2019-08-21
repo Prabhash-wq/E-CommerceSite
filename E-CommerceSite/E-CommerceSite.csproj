@@ -18,7 +18,7 @@
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
-    <IISExpressSSLPort />
+    <IISExpressSSLPort>44327</IISExpressSSLPort>
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
@@ -412,6 +412,16 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\E-CommerceSite.Bussiness\E-CommerceSite.Bussiness.csproj">
+      <Project>{30E7D5EF-9A02-4D8A-80E8-CB04ECA4DCFA}</Project>
+      <Name>E-CommerceSite.Bussiness</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\E-CommerceSite.DataLayer\E-CommerceSite.DataLayer.csproj">
+      <Project>{4ea84d11-369e-47d3-85eb-e9bfd5666b17}</Project>
+      <Name>E-CommerceSite.DataLayer</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
