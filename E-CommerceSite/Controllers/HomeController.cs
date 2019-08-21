@@ -26,5 +26,9 @@ namespace E_CommerceSite.Controllers
 
             return View();
         }
+        public ActionResult testimonials()
+        {
+            return View();
+        }
     }
 }
