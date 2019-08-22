@@ -1,4 +1,5 @@
-﻿using System;
+﻿using E_CommerceSite.Bussiness.DAL;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -10,6 +11,16 @@ namespace E_CommerceSite.Controllers
     {
         public ActionResult Index()
         {
+            SignUpHelper sign = new SignUpHelper();
+            try
+            {
+               var data= sign.ListUser();
+            }
+            catch (Exception ex)
+            {
+
+
+            }
             return View();
         }
 
